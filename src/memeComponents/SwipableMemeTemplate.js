@@ -17,20 +17,16 @@ function SwipeableMemeTemplate(props) {
   const maxSteps = images.length;
 
   const handleNext = () => {
-    console.log(exportRef);
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
   const handleBack = () => {
-    console.log(exportRef);
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
   const handleStepChange = (step) => {
-    console.log(exportRef);
     setActiveStep(step);
   };
-  console.log("rendering with index:", exportRef);
     return (
         <>
         <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
